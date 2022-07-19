@@ -24,13 +24,12 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	public static String screenshotPath;
-	//public static final Logger logger = null; 
+	public static String screenshotPath; 
 
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream fs = new FileInputStream("C:\\Users\\ranje\\eclipse-workspace\\BuggyCar\\resources\\config.properties");			
+			FileInputStream fs = new FileInputStream("C:\\Users\\ranje\\eclipse-workspace\\BuggyCar\\resources\\config.properties");
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
