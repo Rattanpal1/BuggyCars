@@ -2,7 +2,6 @@ package qa.testcases;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.asserts.Assertion;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -17,7 +16,8 @@ import qa.pages.RegisterPage;
 import qa.pages.HomePage;
 import qa.base.TestBase;
 import qa.util.ExtentReporterNG;
-import qa.util.SeleniumUtil;;
+import qa.util.SeleniumUtil;
+import qa.util.Log;
 
 @Listeners(ExtentReporterNG.class)
 public class HomePageTest extends TestBase {
@@ -59,13 +59,13 @@ public class HomePageTest extends TestBase {
 	 */
 	@Test(priority = 1, groups = "regression")
 	public void registerNewUser() {
-		String testId = "T01";
+		String testId = "Test_001";
+		Log.startTestCase(testId + " - Register new user.");		
 		try {
 		Assert.assertEquals(driver.getTitle(), prop.getProperty("title"), "Page title is incorrect.");
+		logger.info("Current page's title: " + driver.getTitle());
 		softAssert.assertTrue(homePage.Register());
-		softAssert.assertTrue(registerPage.inputDetails(prop.getProperty("username"), prop.getProperty("firstname"),
-				prop.getProperty("lastname"), prop.getProperty("password"), true));
-		logger.info("Current page's title: ");
+		softAssert.assertTrue(registerPage.inputDetails(prop.getProperty("username"), prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("password"), true));
 		softAssert.assertAll();
 		} catch (Exception e) {
 			Assert.fail(testId + " failed due to below reason:" + e);
@@ -77,9 +77,11 @@ public class HomePageTest extends TestBase {
 	 */
 	@Test(priority = 2, dependsOnMethods = "registerNewUser", groups = "regression")
 	public void signIn() {
-		String testId = "T02";
+		String testId = "Test_002";
+		Log.startTestCase(testId + " - Sign In.");		
 		try {
 		Assert.assertEquals(driver.getTitle(), prop.getProperty("title"), "Page title is incorrect.");
+		logger.info("Current page's title: " + driver.getTitle());
 		homePage.clickBuggyRating();
 		Assert.assertTrue(homePage.logIn(prop.getProperty("username"), prop.getProperty("password"),prop.getProperty("firstname")));
 		} catch (Exception e) {
@@ -92,9 +94,11 @@ public class HomePageTest extends TestBase {
 	 */
 	@Test(priority = 3, groups = "regression")
 	public void reRegisterUser() {
-		String testId = "T03";
+		String testId = "Test_003";
+		Log.startTestCase(testId + " - Re Register the user.");
 		try {
 		Assert.assertEquals(driver.getTitle(), prop.getProperty("title"), "Page title is incorrect.");
+		logger.info("Current page's title: " + driver.getTitle());
 		softAssert.assertTrue(homePage.Register());
 		String username = registerPage.inputDetailsAndReturnUser(prop.getProperty("username2"),
 				prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("password"), true);
