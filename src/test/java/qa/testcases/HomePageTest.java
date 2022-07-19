@@ -2,6 +2,7 @@ package qa.testcases;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.asserts.Assertion;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -67,7 +68,7 @@ public class HomePageTest extends TestBase {
 		logger.info("Current page's title: ");
 		softAssert.assertAll();
 		} catch (Exception e) {
-			System.out.println(testId + " failed due to below reason:" + e);
+			Assert.fail(testId + " failed due to below reason:" + e);
 		}
 	}
 
@@ -82,7 +83,7 @@ public class HomePageTest extends TestBase {
 		homePage.clickBuggyRating();
 		Assert.assertTrue(homePage.logIn(prop.getProperty("username"), prop.getProperty("password"),prop.getProperty("firstname")));
 		} catch (Exception e) {
-			System.out.println(testId + " failed due to below reason:" + e);
+			Assert.fail(testId + " failed due to below reason:" + e);
 		}
 	}
 
@@ -102,7 +103,7 @@ public class HomePageTest extends TestBase {
 				prop.getProperty("lastname"), prop.getProperty("password"), false));
 		softAssert.assertAll();
 		} catch (Exception e) {
-			System.out.println(testId + " failed due to below reason:" + e);
+			Assert.fail(testId + " failed due to below reason:" + e);
 		}
 	}
 

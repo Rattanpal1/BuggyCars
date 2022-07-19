@@ -74,13 +74,14 @@ public class HomePage extends TestBase {
 
 	public void clickBuggyRating() {
 		buggyRatingBtn.click();
-		//logger.info("Current page's title: ");	
+		//logger.info("Current page's title: "); 	
 	}
 	
 	public boolean logIn(String username, String password, String firstname) {
 		inputLogin.sendKeys(username);
 		inputPassword.sendKeys(password);
 		loginBtn.click();
+		String s = loggedInAs.getText();
 		return(loggedInAs.getText().contains(firstname));		
 	}
 	
