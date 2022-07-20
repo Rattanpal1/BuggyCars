@@ -36,9 +36,6 @@ public class RegisterPage extends TestBase {
 	@FindBy(xpath = "//div[contains(text(),'Passwords do not match')]")
 	WebElement passwordMismatchWarning;
 
-	// static final Logger logger =
-	// LogManager.getLogger(BookingsPage.class.getName());
-
 	public RegisterPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -78,6 +75,16 @@ public class RegisterPage extends TestBase {
 		/* if(flag)
 		new WebDriverWait(driver, 1).until(ExpectedConditions.visibilityOf(successMessage)); */		
 		return username;		
+	}
+	
+	public boolean inputIncorrectDetails(String username, String firstname, String lastname, String password, String confirmpassword) {		
+		
+		inputUsername.sendKeys(username);
+		inputFirstname.sendKeys(firstname);
+		inputLastname.sendKeys(lastname);
+		inputPassword.sendKeys(password);
+		inputConfirmPassword.sendKeys(confirmpassword);
+		return SeleniumUtil.isDisplayed(passwordMismatchWarning);		
 	}
 
 }

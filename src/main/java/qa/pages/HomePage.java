@@ -35,6 +35,9 @@ public class HomePage extends TestBase {
 	WebElement popularMakeImg;
 	
 	@FindBy(xpath="//img[@title='Diablo']")
+	WebElement popularModelImgOld;
+	
+	@FindBy(xpath="//img[@title='Guilia Quadrifoglio']")
 	WebElement popularModelImg;
 	
 	@FindBy(xpath="//img[@class='img-fluid center-block' and @src = '/img/overall.jpg']")
@@ -73,15 +76,13 @@ public class HomePage extends TestBase {
 	}
 
 	public void clickBuggyRating() {
-		buggyRatingBtn.click();
-		//logger.info("Current page's title: "); 	
+		buggyRatingBtn.click(); 	
 	}
 	
 	public boolean logIn(String username, String password, String firstname) {
 		inputLogin.sendKeys(username);
 		inputPassword.sendKeys(password);
 		loginBtn.click();
-		String s = loggedInAs.getText();
 		return(loggedInAs.getText().contains(firstname));		
 	}
 	

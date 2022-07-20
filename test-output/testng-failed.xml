@@ -7,10 +7,9 @@
         <methods>
           <include name="pauseReporting"/>
           <include name="setUp"/>
+          <include name="addComment"/>
           <include name="setVariables"/>
           <include name="tearDown"/>
-          <include name="registerNewUser"/>
-          <include name="signIn"/>
         </methods>
       </class> <!-- qa.testcases.HomePageTest -->
     </classes>
