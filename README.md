@@ -7,7 +7,7 @@ Installation/Prerequisites:
 2. Apache Maven 3.6.3
 3. git version 2.25.1.windows.1
 4. Eclipse IDE for Java Developers Version: 2019-12 (4.14.0) and Build id: 20191212-1212
-5. Chrome browser.
+5. Chrome browser. 
 Note: Need to set environment variables for Java and Maven HOME.
 
 #Steps to run the suite
