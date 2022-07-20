@@ -29,7 +29,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream fs = new FileInputStream("C:\\Users\\ranje\\eclipse-workspace\\BuggyCar\\resources\\config.properties");
+			FileInputStream fs = new FileInputStream("resources\\config.properties");
 			prop.load(fs);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

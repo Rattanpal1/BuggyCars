@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Buggy cars suite" verbose="5" parallel = "tests" thread-count = "1">
+
+	<listeners>
+    <listener class-name="qa.util.ExtentReporterNG"/>        
+    </listeners>
+    
+    <test name="Test Params">
+  	<parameter name="username" value="testuser"/>
+	<parameter name="password" value="testpassword"/>
+    <classes>
+		<class name="qa.testcases.HomePageTest"/>
+    </classes>
+    </test>  
+</suite>

@@ -1,5 +1,7 @@
 package qa.testcases;
 
+import static org.testng.Assert.fail;
+
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -12,6 +14,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import qa.pages.RegisterPage;
 import qa.pages.HomePage;
 import qa.base.TestBase;
@@ -114,8 +118,9 @@ public class HomePageTest extends TestBase {
 	@AfterMethod
 	public void tearDown(ITestResult result) {
 
-		if (result.getStatus() == ITestResult.FAILURE)
+		if (result.getStatus() == ITestResult.FAILURE) 
 			screenshotPath = SeleniumUtil.takeScreenshotAtEndOfTest();
+
 			driver.quit();
 	}
 

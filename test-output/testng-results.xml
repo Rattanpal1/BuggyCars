@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-19T23:10:36 NZST" name="Default suite" finished-at="2022-07-19T23:10:52 NZST" duration-ms="15890">
+  <suite started-at="2022-07-20T15:48:58 NZST" name="Default suite" finished-at="2022-07-20T15:49:13 NZST" duration-ms="14651">
     <groups>
       <group name="regression">
         <method signature="HomePageTest.registerNewUser()[pri:1, instance:qa.testcases.HomePageTest@2e4b8173]" name="registerNewUser" class="qa.testcases.HomePageTest"/>
@@ -10,21 +10,21 @@
         <method signature="HomePageTest.reRegisterUser()[pri:3, instance:qa.testcases.HomePageTest@2e4b8173]" name="reRegisterUser" class="qa.testcases.HomePageTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2022-07-19T23:10:36 NZST" name="Default test" finished-at="2022-07-19T23:10:52 NZST" duration-ms="15890">
+    <test started-at="2022-07-20T15:48:58 NZST" name="Default test" finished-at="2022-07-20T15:49:13 NZST" duration-ms="14651">
       <class name="qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setVariables()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:36 NZST" name="setVariables" finished-at="2022-07-19T23:10:36 NZST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="setVariables()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:48:58 NZST" name="setVariables" finished-at="2022-07-20T15:48:59 NZST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setVariables -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:36 NZST" name="setUp" finished-at="2022-07-19T23:10:39 NZST" duration-ms="3028" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:48:59 NZST" name="setUp" finished-at="2022-07-20T15:49:02 NZST" duration-ms="3094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerNewUser()[pri:1, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:39 NZST" name="registerNewUser" finished-at="2022-07-19T23:10:40 NZST" duration-ms="1110" status="PASS">
+        <test-method signature="registerNewUser()[pri:1, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:02 NZST" name="registerNewUser" finished-at="2022-07-20T15:49:03 NZST" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerNewUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:40 NZST" name="tearDown" finished-at="2022-07-19T23:10:41 NZST" duration-ms="830" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:03 NZST" name="tearDown" finished-at="2022-07-20T15:49:03 NZST" duration-ms="671" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,15 +35,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:41 NZST" name="setUp" finished-at="2022-07-19T23:10:43 NZST" duration-ms="1969" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:03 NZST" name="setUp" finished-at="2022-07-20T15:49:05 NZST" duration-ms="1830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn()[pri:2, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:43 NZST" name="signIn" finished-at="2022-07-19T23:10:44 NZST" depends-on-methods="qa.testcases.HomePageTest.registerNewUser" duration-ms="1022" status="PASS">
+        <test-method signature="signIn()[pri:2, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:05 NZST" name="signIn" finished-at="2022-07-20T15:49:06 NZST" depends-on-methods="qa.testcases.HomePageTest.registerNewUser" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:44 NZST" name="tearDown" finished-at="2022-07-19T23:10:45 NZST" duration-ms="797" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:06 NZST" name="tearDown" finished-at="2022-07-20T15:49:07 NZST" duration-ms="642" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,15 +54,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:45 NZST" name="setUp" finished-at="2022-07-19T23:10:47 NZST" duration-ms="1930" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:07 NZST" name="setUp" finished-at="2022-07-20T15:49:09 NZST" duration-ms="1807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="reRegisterUser()[pri:3, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:47 NZST" name="reRegisterUser" finished-at="2022-07-19T23:10:51 NZST" duration-ms="3606" status="PASS">
+        <test-method signature="reRegisterUser()[pri:3, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:09 NZST" name="reRegisterUser" finished-at="2022-07-20T15:49:12 NZST" duration-ms="3442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reRegisterUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:51 NZST" name="tearDown" finished-at="2022-07-19T23:10:52 NZST" duration-ms="1177" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:12 NZST" name="tearDown" finished-at="2022-07-20T15:49:13 NZST" duration-ms="654" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="pauseReporting()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-19T23:10:52 NZST" name="pauseReporting" finished-at="2022-07-19T23:10:52 NZST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="pauseReporting()[pri:0, instance:qa.testcases.HomePageTest@2e4b8173]" started-at="2022-07-20T15:49:13 NZST" name="pauseReporting" finished-at="2022-07-20T15:49:13 NZST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pauseReporting -->
