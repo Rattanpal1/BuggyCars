@@ -1,6 +1,5 @@
 package qa.testcases;
 
-import static org.testng.Assert.fail;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.log4j.Logger;
@@ -17,7 +16,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 import qa.pages.RegisterPage;
 import qa.pages.HomePage;
 import qa.base.TestBase;
@@ -185,7 +183,7 @@ public class HomePageTest extends TestBase {
 				connection.connect();
 				String response = connection.getResponseMessage();
 				connection.disconnect();				
-				System.out.println("Links and error: " + links.get(j) + " Message: " + response);
+				System.out.println("Link: " + links.get(j) + " Response: " + response);
 			}
 			softAssert.assertAll();
 		} catch (Exception e) {
