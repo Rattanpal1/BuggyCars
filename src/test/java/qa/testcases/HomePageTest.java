@@ -199,7 +199,6 @@ public class HomePageTest extends TestBase {
 
 		if (result.getStatus() == ITestResult.FAILURE) 
 			screenshotPath = SeleniumUtil.takeScreenshotAtEndOfTest();
-
 			driver.quit();
 	}
 
